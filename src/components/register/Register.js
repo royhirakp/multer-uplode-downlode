@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react"
-import axios from 'axios'
+// import { 
+//   useEffect  ,
+//    useState } from "react"
+// import axios from 'axios'
 import { Link } from "react-router-dom";
 // import Loader from "../Card/Loder";
 import './Register.css'
 const Register = (props) => {
-  const [inputEmail, setInputaEmail] = useState('');
-  const [inputPassword, setInputaPassword] = useState('');
-  const [confirmPassword, setconfirmPassword] = useState('');
-  const [passMtchStatus, setPassMtchStatus] = useState(true);
-  const [passwordLengthStatus, setpasswordLengthStatus] = useState(true);
-  const [axiosErr, setAxiosErr] = useState('');
-  const [susecssMess, setSuccessMsg ]= useState ('');
-  const [TandS , setTandS] = useState(false)
-  const [tandSError,setTandSError]  = useState(false)
-  const [loader, setLoader] = useState(false);
+  // const [inputEmail, setInputaEmail] = useState('');
+  // const [inputPassword, setInputaPassword] = useState('');
+  // const [confirmPassword, setconfirmPassword] = useState('');
+  // const [passMtchStatus, setPassMtchStatus] = useState(true);
+  // const [passwordLengthStatus, setpasswordLengthStatus] = useState(true);
+  // const [axiosErr, setAxiosErr] = useState('');
+  // const [susecssMess, setSuccessMsg ]= useState ('');
+  // const [TandS , setTandS] = useState(false)
+  // const [tandSError,setTandSError]  = useState(false)
+  // const [loader, setLoader] = useState(false);
 
   // useEffect(() => {  // useEffect for password and confurm pass word 
   //   if (inputPassword.length > 7) {
@@ -62,22 +64,25 @@ const Register = (props) => {
         
         <input type='email'
         placeholder="Email"
-        onChange={(e) => setInputaEmail(e.target.value)} /><br />
+        // onChange={(e) => setInputaEmail(e.target.value)} 
+        /><br />
      <br />
         <input type='password'
         placeholder="Password"
-        onChange={(e) => setInputaPassword(e.target.value)} /><br />
+        // onChange={(e) =>         setInputaPassword(e.target.value)} 
+        /><br />
       <br />
         <input type='password'
         placeholder="confirm password"
-        onChange={(e) => setconfirmPassword(e.target.value)} /><br />
-        {!passMtchStatus ? <p style={{ "color": "red" }}>Password Notmatched</p> : <></>}
-        {!passwordLengthStatus ? <p style={{ "color": "red" }}>length shouldbe 8</p> : <></>}
+        // onChange={(e) => setconfirmPassword(e.target.value)}
+         /><br />
+        {/* {!passMtchStatus ? <p style={{ "color": "red" }}>Password Notmatched</p> : <></>}
+        {!passwordLengthStatus ? <p style={{ "color": "red" }}>length shouldbe 8</p> : <></>} */}
         <br />
 
           <div className="tramsAndCondition">
             <input 
-            onChange={(e)=>setTandS(e.target.checked)}
+            // onChange={(e)=>setTandS(e.target.checked)}
             type="checkbox" 
             id="inputckeckbox" /> 
             <p>i agree with <a href="https://www.business-standard.com/terms-conditions">TERMS & CONDITION</a>
@@ -88,10 +93,10 @@ const Register = (props) => {
         <Link to="/">SingIn</Link>
       </form>
       
-      {susecssMess ? <h4 style={{color: "green"}}>{susecssMess}</h4> : <></>}
-      {axiosErr ? <h4 style={{color: "red"}}>{axiosErr}</h4> :<></>}
+      {/* {susecssMess ? <h4 style={{color: "green"}}>{susecssMess}</h4> : <></>} */}
+      {/* {axiosErr ? <h4 style={{color: "red"}}>{axiosErr}</h4> :<></>} */}
       
-      {tandSError?<h3>please go through the T & C / Click on the checkbox</h3>:""} 
+      {/* {tandSError?<h3>please go through the T & C / Click on the checkbox</h3>:""}  */}
     </div>
   )
 }

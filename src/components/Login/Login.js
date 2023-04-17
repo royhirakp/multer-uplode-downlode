@@ -1,6 +1,6 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React from 'react'
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import { Navigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 import './Login.css'
 
 const Login = (props) => {
-  const [inputEmail, setInputaEmail] = useState('')
-  const [inputPassword, setInputaPassword] = useState('')
-  // const navgate = useNavigate()
-  const [errorMessege, setErrorMessege] = useState('')
-  const [loader, setLoder] = useState(false)
-  // const [checkboxStatus, setCheckboxStatus] = useState(null)
-  const [emailValidaion, setEmailValidation] = useState(false)
-  const [passWValidaion, setPassWValidation] = useState(false)
+  // const [inputEmail, setInputaEmail] = useState('')
+  // const [inputPassword, setInputaPassword] = useState('')
+  // // const navgate = useNavigate()
+  // const [errorMessege, setErrorMessege] = useState('')
+  // const [loader, setLoder] = useState(false)
+  // // const [checkboxStatus, setCheckboxStatus] = useState(null)
+  // const [emailValidaion, setEmailValidation] = useState(false)
+  // const [passWValidaion, setPassWValidation] = useState(false)
 
   //email and password validation 
   // useEffect(() => {
@@ -69,18 +69,18 @@ const Login = (props) => {
           Email Address:
           <input type='email'
             placeholder='Enter email'
-            style={{ border: emailValidaion ? "red 4px solid" : '' }}
-            onChange={(e) => setInputaEmail(e.target.value)}
+            // style={{ border: emailValidaion ? "red 4px solid" : '' }}
+            // onChange={(e) => setInputaEmail(e.target.value)}
           /><br />
           {
-            emailValidaion ? <p style={{ color: "red" }}>not a valid email</p> : <></>
+            // emailValidaion ? <p style={{ color: "red" }}>not a valid email</p> : <></>
           }
           <br />
           Password
           <input type='password'
             placeholder='Enter password'
-            style={{ border: passWValidaion ? "red 4px solid" : "" }}
-            onChange={(e) => setInputaPassword(e.target.value)}
+            // style={{ border: passWValidaion ? "red 4px solid" : "" }}
+            // onChange={(e) => setInputaPassword(e.target.value)}
           /><br />
 
           <div className="chekboxRemberme">
@@ -103,7 +103,7 @@ const Login = (props) => {
         </form>
         Forgot <a href="http://ww.ckc.co">Password?</a><br />
         <Link to="/register">SingUp</Link>
-        {errorMessege ? <h3 style={{ color: 'red' }}>User Does not exist, please register</h3> : ""}
+        {/* {errorMessege ? <h3 style={{ color: 'red' }}>User Does not exist, please register</h3> : ""} */}
         {/* {loader ? <Loader/> : <></>} */}
         
       </div>
