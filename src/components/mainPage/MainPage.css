@@ -1,0 +1,11 @@
+.filesDisplayContaine{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 80px 20px 80px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+.cardcontai{
+    /* padding: 5px; */
+}
